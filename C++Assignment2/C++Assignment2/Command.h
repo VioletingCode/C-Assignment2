@@ -3,8 +3,7 @@
 class Command {
 public:
 	//The thing the command does
-	virtual unique_ptr<Command> Action() {};
+	virtual Command * Action() = 0;
 	//Undoes that thing
 	virtual void Undo() = 0;
-	virtual ~Command() {};
 };

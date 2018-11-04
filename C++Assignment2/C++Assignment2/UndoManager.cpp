@@ -1,7 +1,7 @@
 #include "UndoManager.h"
 
 void UndoManager::AddCommand(unique_ptr<Command> _action) {
-	actionList.push(_action);
+	//actionList.push(_action);
 }
 
 void UndoManager::UndoCommand() {
